@@ -16,5 +16,8 @@ public class StudentTest {
         Kim.address = "갱기도 성남시";
 
         Kim.getStudentInfo();
+
+        System.out.println(studentLee);
+        System.out.println(Kim);
     }
 }
