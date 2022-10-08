@@ -2,7 +2,7 @@ package ch16;
 
 public class Employee {
 
-    public static int serialNum = 1000;
+    private static int serialNum = 1000;
     private int employeeId;
     private String employeeName;
     protected String department;
@@ -34,4 +34,10 @@ public class Employee {
     public void setDepartment(String department) {
         this.department = department;
     }
+
+    public static int getSerialNum() {
+        return serialNum;
+    }
+
+
 }
