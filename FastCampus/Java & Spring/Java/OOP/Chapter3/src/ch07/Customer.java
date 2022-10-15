@@ -1,0 +1,59 @@
+package ch07;
+
+public class Customer {
+    protected int customerId;
+    protected String customerName;
+    protected String customerGrade;
+    int bonusPoint;
+    double bonusRatio;
+
+    /*
+    public Customer(){
+        customerGrade = "SILVER";
+        ㅊ
+        //System.out.println("Customer() call");
+
+    }//묵시적 호출
+     */
+    public Customer(int customerId, String customerName){
+        customerGrade = "SILVER";
+        bonusRatio = 0.01;
+        this.customerId = customerId;
+        this.customerName = customerName;
+        //System.out.println("Customer(int, String) call");
+    } //명시적 호출
+
+    public int calcPrice(int price){
+        bonusPoint += price * bonusRatio;
+        return price;
+    }
+
+    public String showCumtomerInfo(){
+        return customerName + "님의 등급은 " + customerGrade + "이며, 보너스 포인트는 " + bonusPoint + "입니다.";
+
+    }
+
+    public int getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public String getCustomerGrade() {
+        return customerGrade;
+    }
+
+    public void setCustomerGrade(String customerGrade) {
+        this.customerGrade = customerGrade;
+    }
+}
