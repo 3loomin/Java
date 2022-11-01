@@ -1,6 +1,7 @@
 package hw02;
 
 public class Player {
+
     private PlayerLevel level;
 
     public Player(){
@@ -16,8 +17,9 @@ public class Player {
         this.level = level;
         level.showLevelMessage();
     }
+
     public void play(int cnt){
         level.go(cnt);
-
     }
+
 }
