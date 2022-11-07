@@ -12,7 +12,6 @@ public class MyLinkedList {
     public MyListNode addElement(String data){
 
         MyListNode newNode;
-
         if (head == null) {
 
             newNode = new MyListNode(data);
@@ -91,5 +90,10 @@ public class MyLinkedList {
             hi = hi.next;
         }
         System.out.println(hi.getData());
+    }
+    public boolean isEmpty(){
+        if(head == null) return true;
+        else return false;
+
     }
 }
