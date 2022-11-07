@@ -81,4 +81,9 @@ public class MyArray {
         if(position < 0 || position > count - 1) return ERROR_NUM;
         return intArr[position];
     }
+
+    public void printAll(){
+        for(int i = 0; i < this.count; i++)
+            System.out.println(intArr[i]);
+    }
 }
