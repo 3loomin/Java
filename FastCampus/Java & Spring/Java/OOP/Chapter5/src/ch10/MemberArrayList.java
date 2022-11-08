@@ -1,6 +1,7 @@
 package ch10;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class MemberArrayList {
     private ArrayList<Member> arrayList;
@@ -17,6 +18,7 @@ public class MemberArrayList {
         arrayList.add(member);
     }
     public boolean removeMember(int memberId){
+        /*
         for(int i = 0; i <arrayList.size(); i++ ){
             Member member = arrayList.get(i);
             int tempId = member.getMemberId();
@@ -24,7 +26,16 @@ public class MemberArrayList {
                 arrayList.remove(i);
                 return true;
             }
-
+        }
+         */
+        Iterator<Member> ir = arrayList.iterator();
+        while(ir.hasNext()){
+            Member member = ir.next();
+            int tempId = member.getMemberId();
+            if(tempId == memberId){
+                arrayList.remove(member);
+                return true;
+            }
         }
         System.out.println("memberId is not valid");
         return false;
