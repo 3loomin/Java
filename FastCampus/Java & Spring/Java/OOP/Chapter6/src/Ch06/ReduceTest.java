@@ -1,4 +1,4 @@
-package Ch07;
+package Ch06;
 
 import java.util.Arrays;
 import java.util.function.BinaryOperator;
