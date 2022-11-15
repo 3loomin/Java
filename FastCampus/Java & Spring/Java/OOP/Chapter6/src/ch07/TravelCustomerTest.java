@@ -1,6 +1,5 @@
-package ch08;
+package ch07;
 
-import javax.swing.plaf.basic.BasicSliderUI;
 import java.util.ArrayList;
 import java.util.List;
 

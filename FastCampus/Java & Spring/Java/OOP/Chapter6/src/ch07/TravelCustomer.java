@@ -1,4 +1,4 @@
-package ch08;
+package ch07;
 
 public class TravelCustomer {
     private String name;
