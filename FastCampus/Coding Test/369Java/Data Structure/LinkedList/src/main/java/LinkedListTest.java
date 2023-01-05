@@ -5,6 +5,9 @@ public class LinkedListTest {
         MyLinkedList.addNode(2);
         MyLinkedList.addNode(3);
 
+        MyLinkedList.InsertNode(4,2);
+
+        MyLinkedList.InsertNode(7,20);
         MyLinkedList.printAll();
 
 

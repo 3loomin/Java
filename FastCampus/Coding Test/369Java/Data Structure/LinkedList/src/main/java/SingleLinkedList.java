@@ -31,4 +31,35 @@ public class SingleLinkedList<T> {
             }
         }
     }
+
+    public Node<T> search(T isData){
+        if(this.head == null){
+            return null;
+        } else{
+            Node<T> node = this.head;
+            while(node != null){
+                if(node.data == isData){
+                    return node;
+                }else{
+                    node = node.next;
+                }
+            }
+            return null;
+        }
+
+    }
+    public void InsertNode(T data, T isData){
+        Node<T> searchedNode = this.search(isData);
+        if(searchedNode == null){
+            this.addNode(data);
+        } else{
+            Node<T> nextNode = searchedNode.next;
+            searchedNode.next = new Node<T>(data);
+            searchedNode.next.next = nextNode;
+
+        }
+
+
+
+    }
 }
