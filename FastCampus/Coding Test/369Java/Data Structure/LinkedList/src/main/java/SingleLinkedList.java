@@ -48,7 +48,7 @@ public class SingleLinkedList<T> {
         }
 
     }
-    public void InsertNode(T data, T isData){
+    public void insertNode(T data, T isData){
         Node<T> searchedNode = this.search(isData);
         if(searchedNode == null){
             this.addNode(data);
