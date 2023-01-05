@@ -58,8 +58,27 @@ public class SingleLinkedList<T> {
             searchedNode.next.next = nextNode;
 
         }
+    }
 
-
+    public boolean delNode(T isData){
+        if(this.head == null){
+            return false;
+        } else {
+            Node<T> node = this.head;
+            if(node.data == isData){
+                this.head = this.head.next;
+                return true;
+            } else{
+                while(node.next != null){
+                    if(node.next.data == isData){
+                        node.next = node.next.next;
+                        return true;
+                    }
+                    node = node.next;
+                }
+                return false;
+            }
+        }
 
     }
 }
