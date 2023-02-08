@@ -18,3 +18,13 @@
 
 요구 사항을 보면 회원 데이터, 할인 정책 같은 부분은 지금 결정하기 어려운 부분이다. 그렇다고 이런 정책이 결졍될 때까지 무한정 개발을 기다릴 수 없다.
 >인터페이스를 만들고, 구현체를 언제든지 갈아 끼울 수 있도록 설계해보자.
+
+## 회원 도메인 협력 관계
+<img width="825" alt="회원 도메인 협력 관계" src="https://user-images.githubusercontent.com/59642185/217428917-529a2927-6b55-45ef-8e16-6f76cd39b716.png">
+
+## 회원 클래스 다이어그램
+<img width="826" alt="회원 클래스 다이어그램" src="https://user-images.githubusercontent.com/59642185/217428913-0d9d0e26-9841-48ab-a19c-8bc00a348cc0.png">
+
+## 회원 객체 다이어그램
+<img width="827" alt="회원 객체 다이어그램" src="https://user-images.githubusercontent.com/59642185/217428905-3da2a056-74aa-47ba-a204-5795efae75f9.png">
+* 회원 서비스:MemberServiceImpl
