@@ -27,4 +27,4 @@
 
 ## 회원 객체 다이어그램
 <img width="827" alt="회원 객체 다이어그램" src="https://user-images.githubusercontent.com/59642185/217428905-3da2a056-74aa-47ba-a204-5795efae75f9.png">
->회원 서비스:MemberServiceImpl
+> 회원 서비스:MemberServiceImpl
