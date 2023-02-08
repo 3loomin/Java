@@ -23,5 +23,8 @@
 <img width="825" alt="회원 도메인 협력 관계" src="https://user-images.githubusercontent.com/59642185/217428917-529a2927-6b55-45ef-8e16-6f76cd39b716.png">
 
 ## 회원 클래스 다이어그램
+<img width="826" alt="회원 클래스 다이어그램" src="https://user-images.githubusercontent.com/59642185/217428913-0d9d0e26-9841-48ab-a19c-8bc00a348cc0.png">
 
 ## 회원 객체 다이어그램
+<img width="827" alt="회원 객체 다이어그램" src="https://user-images.githubusercontent.com/59642185/217428905-3da2a056-74aa-47ba-a204-5795efae75f9.png">
+>회원 서비스:MemberServiceImpl
