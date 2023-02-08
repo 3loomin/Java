@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.*;
 
 public class Main {
@@ -97,5 +98,185 @@ public class Main {
 //            System.out.println(f*100);
 //        }
 
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        String n  = sc.nextLine();
+//        int nn = Integer.parseInt(n);
+//        int count = 0;
+//
+//        String arr[] = sc.nextLine().split(" ");
+//        String ans = sc.nextLine();
+//        for(int i = 0; i < nn; i++){
+//            if(arr[i].equals(ans)){
+//                count++;
+//            }
+//        }
+//
+//        System.out.println(count);
+//    }
+
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        String arr[] = sc.nextLine().split(" ");
+//        int count = 0;
+//        if(arr.length > 0){
+//            if(arr[0].equals("")){
+//                for(int i = 1;  i <arr.length; i++){
+//                    count++;
+//                }
+//            }
+//            else{
+//                for(int i = 0;  i <arr.length; i++){
+//                    count++;
+//                }
+//            }
+//        }
+//        System.out.println(count);
+//    }
+//    public static void main(String[] args){
+//        Scanner sc = new Scanner(System.in);
+//        String arr[] = sc.nextLine().split(" ");
+//        int a[] =  new int[2];
+//        for(int i = 0; i < 2;  i++){
+//            a[i]  = Integer.parseInt(arr[i]);
+//        }
+//        int res = (change(a[0]) > change(a[1])) ? change(a[0]) : change(a[1]);
+//        System.out.println(res);
+//
+//    }
+//    public static int change(int a){
+//        int tmp = 0;
+//        tmp = 100*(a%10) + 10*((a/10)%10) + a/100;
+//        return tmp;
+//    }
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        String a[] = sc.nextLine().split("");
+//        int res = 0;
+//        for(int i = 0; i < a.length; i++){
+//            switch (a[i]){
+//                case "A" : case "B" : case "C" :
+//                    res += 3;
+//                    break;
+//                case "D": case "E": case "F":
+//                    res += 4;
+//                    break;
+//                case "G": case "H": case "I":
+//                    res += 5;
+//                    break;
+//                case "J": case "K": case "L":
+//                    res += 6;
+//                    break;
+//                case "M": case "N": case "O":
+//                    res += 7;
+//                    break;
+//                case "P": case "Q": case "R" : case "S":
+//                    res += 8;
+//                    break;
+//                case "T": case "U": case "V":
+//                    res += 9;
+//                    break;
+//                case "X": case "Y": case "W": case "Z":
+//                    res += 10;
+//                    break;
+//
+//            }
+//
+//        }
+//        System.out.println(res);
+//
+//    }
+//    public static void main(String[] args) {
+//
+//        Scanner sc = new Scanner(System.in);
+//
+//        String s = sc.nextLine();
+//
+//
+//        s = s.replaceAll("c=","h");
+//        s = s.replaceAll("c-","h");
+//        s = s.replaceAll("dz=","h");
+//        s = s.replaceAll("d-","h");
+//        s = s.replaceAll("lj","h");
+//        s = s.replaceAll("nj","h");
+//        s = s.replaceAll("s=","h");
+//        s = s.replaceAll("z=","h");
+//
+//        System.out.println(s.length());
+//
+//    }
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        String nn = sc.nextLine();
+//        int n = Integer.parseInt(nn);
+//
+//        int count = 0;
+//
+//
+//
+//        for(int i = 0; i < n; i++){
+//            String a[] = sc.nextLine().split("");
+//            if(isGroup(a)){
+//                count++;
+//            }
+//        }
+//
+//        System.out.println(count);
+//
+//
+//    }
+//    public static boolean isGroup(String a[]){
+//        ArrayList<String> arr = new ArrayList<>();
+//
+//        for(int i = 1; i < a.length; i++){
+//            if( !(a[i-1].equals(a[i])) ){
+//
+//                arr.add(a[i-1]);
+//
+//                if(arr.contains(a[i])){
+//                    return false;
+//                }
+//            }
+//        }
+//
+//        return true;
+//    }
+
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int sum = 0;
+//        int ans = sc.nextInt();
+//        int n = sc.nextInt();
+//
+//        for(int i =0; i < n; i++) {
+//            int a = sc.nextInt();
+//            int b = sc.nextInt();
+//            sum+= a*b;
+//        }
+//        if(ans == sum){
+//            System.out.println("Yes");
+//        } else {
+//            System.out.println("No");
+//        }
+//
+//    }
+
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        int arr[] = new int[31];
+
+
+        for(int i = 0; i < 28; i++){
+            int a = sc.nextInt();
+
+            arr[a] = 1;
+        }
+
+        for(int i = 1; i <= 30; i++){
+            if(arr[i] == 0){
+                System.out.println(i);
+            }
+        }
+    }
 
 }
